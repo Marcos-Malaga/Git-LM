@@ -191,9 +191,18 @@
     
         <h4>Formularios</h4>
         <b><p>'< div > ' :contenedor</p></b>
-        <b><p>'< form '</p></b>
+        <b><p>'< textarea '</p></b>
+        <b><p>'< button '</p></b>
+        <b><p>'< select '</p></b>
+        <b><p>'< option '</p></b>
+        <b><p>'< optgroup '</p></b>
+        <b><p>'< fieldset '</p></b>
+        <b><p>'< label  '</p></b>
+        <b><p>'< output '</p></b>
         <b><blockquote>id=""</blockquote></b>
         <b><blockquote>name=""</blockquote></b>
+        <b><blockquote>rows=""</blockquote></b>
+        <b><blockquote>cols=""</blockquote></b>
         <b><blockquote>method="x" ></blockquote></b>
         <blockquote><pre>x =  post ó get ó dialog </pre></blockquote>
         <b><blockquote>action="data.php" >loqesea</blockquote></b>
@@ -211,13 +220,24 @@
         
         <div>
             <form id="formulario1" method="post" action="data.php">
-                Nombre: <br>
-                <input type="text" name="nombre" id="nombre" value="John"><br>
+                Nombre (maxlength<9): <br>
+                <input type="text" name="nombre" maxlength="9" id="nombre" value=""><br>
                 Apellidos: <br>
                 <input type="text" name="apellido" id="apellido" value="Martinez"><br>
                 Edad: <br>
                 <input type="text" name="edad" id="edad" size="2" maxlength="2" value="30"><br>
-                <input type="text">
+                
+                <br>
+                <p><label for="Label">Textaera normal</label></p>
+                <textarea name="Textaera" id="textaera" cols="40" rows="4" >Textaera</textarea>
+                <input type="submit" value="^">
+
+                <p><label for="Label">Textaera + disabled</label></p>
+                <textarea name="Textaera" id="textaera"  disabled cols="40" rows="4" >Textaera</textarea>
+                <input type="submit" value="^">
+                
+                <button type="button">Click Me!</button>
+
             </form>
         </div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLaxZkGlLWHGU9ym06568PNnoUYwEL7yLH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
